@@ -9,11 +9,17 @@ public class Patient {
 
     Patient (String name) {
         this.name = name;
+        if (sickness == null) {
+            this.sickBool = false;
+        }
     }
 
     Patient (String name, String sickness) {
         this.name = name;
         this.sickness = sickness;
+        if (sickness == null) {
+            this.sickBool = false;
+        }
     }
 
     String takeMedication(Medicine medicine){
