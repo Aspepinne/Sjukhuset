@@ -15,11 +15,10 @@ public class Patient {
         this.sickness = sickness;
     }
 
-    String takeMedication(Medicine medicine){
+    void takeMedication(Medicine medicine){
         if(medicine.getTreatmentName().equals(sickness)){
             sickness = null;
         }
-        return sickness;
     }
 
     String getName(){
@@ -31,9 +30,6 @@ public class Patient {
     }
 
     Boolean isSick(){
-        if (sickness == null){
-            this.sickBool = false;
-        }
-        return sickBool;
+        return sickness != null;
     }
 }
