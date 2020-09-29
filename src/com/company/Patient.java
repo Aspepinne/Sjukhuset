@@ -4,7 +4,6 @@ public class Patient {
 
     private String name;
     private String sickness;
-    private boolean sickBool = true;
 
     Patient (String name){
         this.name = name;
